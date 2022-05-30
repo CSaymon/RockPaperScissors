@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 1rem;
+}
+
+.contador {
+  margin-top: 1rem;
+}
+
+.game {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.game div {
+  border: 1px solid black;
+  min-width: 5rem;
+  min-height: 5rem;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.game div:hover {
+  cursor: pointer;
+}
+
+.game div:nth-child(2) {
+  margin-inline: 1rem;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+
+.result div {
+  border: 1px solid black;
+  min-width: 5rem;
+  min-height: 5rem;
+  text-align: center;
+}
+
+.result div:nth-child(1),
+.result div:nth-child(2) {
+  border-radius: 50%;
+}
+
+.rock,
+#rock {
+  background-image: url(rock.jpeg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.paper,
+#paper {
+  background-image: url(paper.jpeg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.scissors,
+#scissors {
+  background-image: url(scissors.jpeg);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
